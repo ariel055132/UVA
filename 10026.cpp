@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 /*
-shoemaker's problem
+Shoemaker's problem
 直接將罰金除以天數 ，然後排序，高的先做即可。
 Let a and b are two different jobs
 Da, Db are the days needed for finishing the job
