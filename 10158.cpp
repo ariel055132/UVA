@@ -7,6 +7,7 @@ using namespace std;
  * A common enemy (b) makes two people (a & c) friends
  * if a and b are enemies, b and c are friends --> b and c are friends
  * An enemy (a) of a friend (b & c) is an enemy.
+ uva 10158
  */
 
 // find the union
