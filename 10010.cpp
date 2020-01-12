@@ -5,6 +5,9 @@ using namespace std;
 int r, c; // row, column
 string matrix[50];
 
+ 
+// Where's Waldorf?
+
 // consider out of bound or not
 bool bound(int row, int column){
     if(((row>=0)&&(row<r))&&((column>=0)&&(column<c))){
