@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// Use Euclidean Algorithm to find GCD (greatest common divisor)
+// Use Euclidean Algorithm to find GCD (greatest common divisor) by recursive
 int GCD(int a, int b){
     if (a == 0 && b!= 0){
         return a;
