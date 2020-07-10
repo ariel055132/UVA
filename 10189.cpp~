@@ -44,7 +44,7 @@ int main(){
                         field[i-1][j]++; //left
                         field[i-1][j+1]++; // top-left
                     }        
-                }
+                }        
             }
             
             // There must be an empty line between field outputs
