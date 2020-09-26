@@ -83,4 +83,35 @@
 
    
 
-​	  
+  2. Vector 
+
+     Dynamic array
+
+     1. push_back() : 新增元素至 vector 的尾端，必要時會進行記憶體配置。
+     2. pop_back() : 刪除 vector 最尾端的元素。
+     3. size() : 取得 vector 目前持有的元素個數。
+     4. [i] : 存取索引值(index)為 i 的元素值。
+     5. clear() : 清空所有元素。
+     6. begin() : 回傳一個 iterator，它指向 vector 第一個元素。
+     7. end() : 回傳一個 iterator，它指向 vector 最尾端元素的下一個位置（請注意：它不是最末元素）。
+
+     ```C++
+     #include <vector>
+     using namespace std;
+     
+     int main() {
+         vector<int> vec;
+     	vec.push_back(10); // [10]
+         vec.push_back(20); // [10, 20]
+         vec.push_back(30); // [10, 20, 30]
+         
+         int len = vec.size(); // len = 3
+         for(int i = 0; i < len; i++) {
+             cout << vec[i] << endl;  // output, 10, 20, 30
+         }
+     }
+     ```
+     3. Set  集合
+        1. insert :  把一個數字放進集合
+        2. erase : 把某個數字從集合中移除
+        3. count : 檢查某個數是否有在集合中
