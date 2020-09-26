@@ -115,3 +115,26 @@
         1. insert :  把一個數字放進集合
         2. erase : 把某個數字從集合中移除
         3. count : 檢查某個數是否有在集合中
+        4. size:  取得 Set 目前持有的元素個數。
+        5. clear : 清空所有元素。
+     ```c++
+     #include <set>
+     using namespace std;
+     // UVA 263
+     int main() {
+         set<int> mySet;
+         mySet.insert(20); // mySet = {20}
+         mySet.insert(10); // mySet = {10, 20}
+         mySet.insert(30); // mySet = {10, 20, 30}
+         cout << mySet.count(20) << endl; // exist -> 1
+         cout << mySet.count(50) << endl; // not exist -> 0
+         /*
+         if (mySet.count(20) == true){
+         	your code
+         }
+         */
+         mySet.erase(20);  // mySet = {10, 30}
+         myset.clear();    // mySet = {}
+         return 0;
+     }
+     ```
