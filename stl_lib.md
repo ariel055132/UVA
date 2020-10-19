@@ -138,3 +138,50 @@
          return 0;
      }
      ```
+
+3. Algorithms std
+
+   Some useful functions/methods in algorithm library.
+
+   1. sort() : sort data in ascending order, if you need descending order, write a cmp function
+   2. reverse() : reverse data
+
+   ```c++
+   #include <algorithm> // include pls = =
+   // sort string
+   using namespace std;
+   bool cmp(char a, char b) {
+       return a > b;
+   }
+   
+   int main(){
+       string str1 = "876352";
+       sort(str1.begin(), str1.end()); // sort in ascending order
+       cout << str1 << endl; // 235678
+       sort(str1.begin(), str1.end(), cmp); // sort in descending order
+       cout << str1 << endl; // 876532
+   }
+   ```
+
+   ```C++
+   #include <algorithm> // include this
+   #include <vector>
+   // sort vector
+   using namespace std;
+   
+   int main(){
+       vector<int> num{1, 5, 8, 9, 6, 7, 3, 4, 2, 0};
+       sort(num.begin(), num.end()); // ascending order
+       for(int i = 0; i < num.size(); i++) {
+           cout << num[i] << " ";
+       } // 0 1 2 3 4 5 6 7 8 9 
+       sort(num.begin(), num.end(), greater<int>()); // descending order
+       /*
+       reverse(num.begin(), num.end()); // reverse the vector
+       */
+   }
+   
+   
+   ```
+
+   
