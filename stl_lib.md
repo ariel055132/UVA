@@ -234,6 +234,33 @@
    }
    ```
 
+   ```c++
+   // uva 10420
+   #include <iostream>
+   #include <map>
+   
+   using namespace std;
+   
+   int main() {
+       int n = 0; // number of case
+       string country;
+       string people;
+       
+       cin >> n;
+       map<string, int> record;
+       map<string, int>::iterator iter;
+       
+       for (int i = 0; i < n; i++) {
+           cin >> country;
+           record[country]++;
+           getline(cin, people);
+       }
+       for (iter = record.begin(); iter != record.end(); iter++) {
+           cout << iter->first << " " << iter->second << endl;
+       }
+   }
+   ```
+
    
 
 5.  GCD (Greatest Common divisor) by recursive
@@ -253,3 +280,4 @@
    ```
 
    
+
