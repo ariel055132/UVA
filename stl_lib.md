@@ -183,4 +183,73 @@
    }
    ```
 
+4. Map
+
+   1 to 1 mapping function (key : value)
+
+   it will do the sorting with the key automatically
+
+   ```c++
+   #include <iostream>
+   #include <string>
+   #include <map>
+   
+   using namespace std;
+   
+   int main() {
+       // declaration container and iterator
+       map<string, string> student;
+       map<string, string>::iterator iter; // iterator
+       map<string, string>::iterator iter_r; // reverse iterator
+       
+       // empty the map (initialization)
+       student.clear();
+       
+   	// insert element
+       student.insert(pair<string, string>("r000", "student_zero"));
+       student["r123"] = "student_first";
+       student["r456"] = "student_second";
+       
+       // traversal
+       for(iter = student.begin(); iter != student.end(); iter++) {
+           cout << iter->first << " " << iter->second << endl;
+       } // r000, r123, r456
+       
+       // reverse traversal
+       for(iter_r = student.rbegin(); iter_r != student.rend(); iter_r++) {
+           cout << iter_r->first << " " << iter_r -> second << endl;
+       } // r456, r123, r000
+       
+       // find and erase the element
+       iter = student.find("r123");
+       student.erase(iter);
+       
+       iter = student.find("r123"); // should be not find
+       if(iter != student.end()) {
+           cout << "Find, the value is " << iter->second << endl;
+       } else {
+           cout << "Not found" << endl;
+       } // Not found
+       return 0;
+   }
+   ```
+
+   
+
+5.  GCD (Greatest Common divisor) by recursive
+
+   ```c++
+   #include <iostream>
+   using namespace std;
+   int gcd(int a, int b) {
+       if (a == 0 && b != 0) {
+           return a;
+       }
+       if (b == 0) {
+       	return a;
+       }
+       else return gcd(b, a%b);
+   }
+   ```
+
    
