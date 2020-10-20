@@ -61,7 +61,6 @@
    #include <vector>
    #include <iostream>
    // defines a vector for integer values, insert 6 elements and prints the elements of the vector
-   
    using namespace std;
    
    int main(){
@@ -80,4 +79,27 @@
    }
    ```
 
-​		Deques
+   Deque (Double-ended queue) :  A dynamic array that is implemented so that it can grow in both directions, inserting elements at the end and at the beginning is fast
+
+   ```c++
+   #include <deque>
+   #include <iostream>
+   // declare a deque for floating-point values, insert elements from 1.1 to 6.6 at the front of the container, prints all elements of the deque
+   using namespace std;
+   
+   int main() {
+       deque<float> coll; // deque container for floating-point elements
+       // insert elements from 1.1 to 6.6 each at the front
+       for(int i = 1; i <= 6; i++) {
+           coll.push_front(i*1.1);
+       }
+       // print all elements followed by a space
+       for(int i = 0; i <= coll.size(); i++) {
+           cout << coll[i] << " ";
+       } // 6.6 5.5 4.4 3.3 2.2 1.1
+       cout << endl;
+   }
+   ```
+
+   Lists 
+
