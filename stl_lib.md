@@ -281,3 +281,23 @@
 
    
 
+6. Numeric Library
+
+   - sqrt() : square root  --> include <math.h>
+   - pow() : power  --> include <math.h> / include <cmath>
+
+   ```C++
+   #include <iostream>
+   #include <cmath> // #include <math.h>
+   #include <math.h>
+   
+   using namespace std;
+   
+   int main() {
+       cout << sqrt(9) << endl; // 3
+       cout << pow(2, 8) << endl; // 2^8 = 256
+       return 0;
+   }
+   ```
+
+   
