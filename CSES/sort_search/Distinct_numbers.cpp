@@ -24,11 +24,5 @@ int main() {
         }
     }
     cout << ans << endl;
-    /*
-    for (int i = 0; i < num.size(); i++)
-    {
-        cout << num[i] << endl;
-    }
-    */
     return 0;
 }
