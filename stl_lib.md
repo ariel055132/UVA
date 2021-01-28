@@ -300,4 +300,6 @@
    }
    ```
 
-   
+7. lower_bound / upper_bound
+    * auto it = (sth).lower_bound(value);
+    * auto it = lower_bound(v.begin(), v.end(), value);
